@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#898"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input a character:"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/inputchar"
+        android:layout_width="50dp"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:maxLength="1"
+        />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="get"
+    android:text="Find"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The ascii value is: "
+        android:textAlignment="center"
+        android:textSize="30sp"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ans"
+    android:textSize="20sp"
+    android:textAlignment="center"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:onClick="clear"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="exit"
+        android:onClick="exit"
+        />
+</LinearLayout>
